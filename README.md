@@ -11,6 +11,8 @@ numpy.ndarray型のデータセットを生成するスクリプト
 ## 必要なライブラリ等
 * [numpy](https://github.com/numpy/numpy)
 * [Pillow](https://github.com/python-pillow/Pillow)
+* [pandas](https://github.com/pandas-dev/pandas)
+* [joblib](https://github.com/joblib/joblib)
 * [npTDMS](https://github.com/adamreeve/npTDMS)
 
  [pathlib](https://docs.python.org/ja/3.5/library/pathlib.html)を用いているので、Python3.4以上を推奨します。
@@ -27,7 +29,7 @@ numpy.ndarray型のデータセットを生成するスクリプト
 └─ strategy
 │   └─ FilesLoaderStrategy.py
 │    
-└─ img_src
+└─ data_src
     ├─0_black
     │      c_blk_01.jpg
     │      ...
@@ -43,9 +45,9 @@ numpy.ndarray型のデータセットを生成するスクリプト
 
 
 
-#### データセットの生成（npzファイルの保存）
+#### データセットの生成（joblibファイルの保存）
 
-以下のように、`-o`に続けてデータセットの保存先となるnpzファイル名、`-i`に続けて元画像を格納したディレクトリ（上記ディレクトリ構成の場合は`data_src`）等を指定します。  
+以下のように、`-o`に続けてデータセットの保存先となるjoblibファイル名、`-i`に続けて元画像を格納したディレクトリ（上記ディレクトリ構成の場合は`data_src`）等を指定します。  
 
 ```
 $ python data_set_maker.py -h
