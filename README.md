@@ -25,9 +25,9 @@ numpy.ndarray型のデータセットを生成するスクリプト
 
 ```
 │  dataset.joblib
-│  DataSetMaker.py
+│  data_set_maker.py
 └─ strategy
-│   └─ FilesLoaderStrategy.py
+│   └─ files_loader_strategy.py
 │    
 └─ data_src
     ├─0_black
@@ -51,7 +51,7 @@ numpy.ndarray型のデータセットを生成するスクリプト
 
 ```
 $ python data_set_maker.py -h
-usage: DataSetMaker.py [-h] [-i INPUT] [-o OUTPUT] [-e EXT]
+usage: data_set_maker.py [-h] [-i INPUT] [-o OUTPUT] [-e EXT]
 
 This script is ...
 
